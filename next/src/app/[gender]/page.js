@@ -11,3 +11,17 @@ export default function DynamicRoute({params}) {
         </main>
     );
 }
+
+export async function generateStaticParams(){
+    return [
+        {
+            gender: "kobieta",
+        },
+        {
+            gender: "mezczyzna",
+        },
+        {
+            gender: "dziecko",
+        },
+    ];
+}
